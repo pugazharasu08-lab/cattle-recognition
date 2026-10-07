@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --color-bg: #f8fafc;
+    --color-surface: #ffffff;
+    --color-text: #0f172a;
+    --color-text-muted: #64748b;
+    --color-border: #e2e8f0;
+    --color-card: #ffffff;
+    --color-input-bg: #ffffff;
+    --color-nav-bg: rgba(255,255,255,0.97);
+  }
+
+  .dark {
+    --color-bg: #0d1117;
+    --color-surface: #161b22;
+    --color-text: #f0f6fc;
+    --color-text-muted: #8b949e;
+    --color-border: #30363d;
+    --color-card: #1c2128;
+    --color-input-bg: #1c2128;
+    --color-nav-bg: rgba(13,17,23,0.97);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #30363d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Pulsing radar effect for scan */
+@keyframes radar-sweep {
+  0% { transform: translateY(-100%); opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { transform: translateY(200%); opacity: 0.2; }
+}
+
+.scanner-line {
+  animation: radar-sweep 2.2s ease-in-out infinite;
+}
+
+/* Smooth theme transitions */
+*, *::before, *::after {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Dark mode utility overrides */
+.dark .bg-white { background-color: var(--color-card) !important; }
+.dark .bg-slate-50 { background-color: #161b22 !important; }
+.dark .bg-slate-50\/70 { background-color: rgba(13,17,23,0.85) !important; }
+.dark .bg-slate-100 { background-color: #21262d !important; }
+.dark .text-slate-900 { color: #f0f6fc !important; }
+.dark .text-slate-800 { color: #e6edf3 !important; }
+.dark .text-slate-700 { color: #cdd9e5 !important; }
+.dark .text-slate-600 { color: #adbac7 !important; }
+.dark .text-slate-500 { color: #768390 !important; }
+.dark .text-slate-400 { color: #636e7b !important; }
+.dark .border-slate-200 { border-color: #30363d !important; }
+.dark .border-slate-100 { border-color: #21262d !important; }
+.dark .border-slate-200\/80 { border-color: rgba(48,54,61,0.8) !important; }
+.dark .border-slate-200\/90 { border-color: rgba(48,54,61,0.9) !important; }
+.dark .shadow-xs { box-shadow: 0 0 0 1px rgba(255,255,255,0.05) !important; }
+.dark .bg-slate-50\/50 { background-color: rgba(22,27,34,0.5) !important; }
+.dark .bg-emerald-50 { background-color: rgba(6,78,59,0.25) !important; }
+.dark .bg-emerald-50\/60 { background-color: rgba(6,78,59,0.2) !important; }
+.dark .bg-emerald-50\/80 { background-color: rgba(6,78,59,0.2) !important; }
+.dark .bg-emerald-50\/90 { background-color: rgba(6,78,59,0.25) !important; }
+.dark .text-emerald-900 { color: #6ee7b7 !important; }
+.dark .text-emerald-950 { color: #a7f3d0 !important; }
+.dark .border-emerald-200 { border-color: rgba(52,211,153,0.25) !important; }
+.dark .border-emerald-100 { border-color: rgba(52,211,153,0.15) !important; }
+.dark .border-emerald-100\/80 { border-color: rgba(52,211,153,0.12) !important; }
+.dark .bg-amber-50 { background-color: rgba(120,53,15,0.2) !important; }
+.dark .bg-amber-50\/70 { background-color: rgba(120,53,15,0.15) !important; }
+.dark .border-amber-200 { border-color: rgba(217,119,6,0.3) !important; }
+.dark .text-amber-900 { color: #fcd34d !important; }
+.dark .bg-rose-50 { background-color: rgba(127,29,29,0.2) !important; }
+.dark .border-rose-200 { border-color: rgba(239,68,68,0.3) !important; }
+.dark .text-rose-800 { color: #fca5a5 !important; }
+.dark .bg-indigo-50 { background-color: rgba(49,46,129,0.2) !important; }
+.dark .text-indigo-900 { color: #c7d2fe !important; }
+.dark .bg-teal-50 { background-color: rgba(19,78,74,0.2) !important; }
+.dark select { background-color: var(--color-input-bg); color: var(--color-text); border-color: var(--color-border); }
+.dark input { background-color: var(--color-input-bg) !important; color: var(--color-text) !important; border-color: var(--color-border) !important; }
+.dark input::placeholder { color: var(--color-text-muted); }

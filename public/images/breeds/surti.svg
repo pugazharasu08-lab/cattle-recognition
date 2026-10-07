@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="surti-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532d" />
+      <stop offset="100%" stop-color="#052e16" />
+    </linearGradient>
+    <linearGradient id="surti-badge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#surti-grad)" />
+  <circle cx="400" cy="190" r="110" fill="#ffffff" fill-opacity="0.05" stroke="#4ade80" stroke-width="2" stroke-dasharray="6,4" />
+  <g transform="translate(352, 142) scale(2.0)" fill="none" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Sickle shaped horns -->
+    <path d="M4 11c-2-4 0-8 4-8 1 2 2 5 0 8" stroke="#4ade80"/>
+    <path d="M20 11c2-4 0-8-4-8-1 2-2 5 0 8" stroke="#4ade80"/>
+    <rect x="7" y="9" width="10" height="11" rx="4" stroke="#f8fafc"/>
+    <circle cx="10" cy="13" r="1" fill="#4ade80"/>
+    <circle cx="14" cy="13" r="1" fill="#4ade80"/>
+    <path d="M10 17h4"/>
+  </g>
+  <text x="400" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">Surti Buffalo</text>
+  <text x="400" y="360" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="500" fill="#86efac" text-anchor="middle">Sickle-Horned Dairy Breed • Charotar, Gujarat</text>
+  <rect x="290" y="395" width="220" height="38" rx="19" fill="url(#surti-badge)" />
+  <text x="400" y="420" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">BREED PROFILE CARD</text>
+</svg>

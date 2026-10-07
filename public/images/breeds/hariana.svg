@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hariana-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#hariana-grad)" />
+  <circle cx="400" cy="190" r="110" fill="#ffffff" fill-opacity="0.05" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6,4" />
+  <!-- Stylized cattle emblem -->
+  <g transform="translate(352, 142) scale(2.0)" fill="none" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 4v4m0 8v4M4 12h4m8 0h4" opacity="0.3"/>
+    <path d="M7 6c0-2 2-3 5-3s5 1 5 3v3H7V6z" stroke="#38bdf8"/>
+    <path d="M5 10c-2 1-3 3-3 5 0 3 4 5 10 5s10-2 10-5c0-2-1-4-3-5" stroke="#f8fafc"/>
+    <circle cx="9" cy="14" r="1" fill="#38bdf8"/>
+    <circle cx="15" cy="14" r="1" fill="#38bdf8"/>
+    <path d="M10 18h4"/>
+  </g>
+  <text x="400" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">Hariana Cattle</text>
+  <text x="400" y="360" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="500" fill="#94a3b8" text-anchor="middle">Dual-Purpose Indigenous Breed • Rohtak, Haryana</text>
+  <rect x="290" y="395" width="220" height="38" rx="19" fill="url(#badge-grad)" />
+  <text x="400" y="420" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">BREED PROFILE CARD</text>
+</svg>
